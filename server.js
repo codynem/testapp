@@ -22,7 +22,7 @@ app.use(cors());
 app.use(express.static('website'));
 
 // Setup Server
-const PORT = process.env.port;
+const PORT = process.env.PORT;
 
 app.listen(PORT, () => {
     console.log(`The app is running on ${PORT}`);
