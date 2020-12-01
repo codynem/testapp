@@ -22,10 +22,10 @@ app.use(cors());
 app.use(express.static('website'));
 
 // Setup Server
-const port = 3000;
+const PORT = process.env.port;
 
-app.listen(port, () => {
-    console.log(`The app is running on ${port}`);
+app.listen(PORT, () => {
+    console.log(`The app is running on ${PORT}`);
 });
 
 // GET Method
