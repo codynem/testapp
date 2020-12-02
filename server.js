@@ -28,6 +28,10 @@ app.listen(PORT, () => {
     console.log(`The app is running on ${PORT}`);
 });
 
+app.get('/', (req, res) => {
+    res.send("Hello World");
+});
+
 // GET Method
 app.get('/getRecentWeatherData', (req, res) => {
     res.send(JSON.stringify(projectData));
